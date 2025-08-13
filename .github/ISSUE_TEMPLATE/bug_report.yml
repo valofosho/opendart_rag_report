@@ -1,0 +1,39 @@
+name: "🐛 Bug Report"
+description: "버그 제보 및 오류 현상 보고"
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: 🔍 버그 설명
+      description: 발생한 버그에 대해 명확히 설명해주세요.
+      placeholder: 예) 버튼 클릭 시 페이지가 이동하지 않음
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📌 재현 방법 (Reproduction Steps)
+      description: 버그가 발생하는 과정을 단계별로 작성해주세요.
+      placeholder: |
+        1. 로그인 후 메인 페이지 이동
+        2. "새 글 작성" 버튼 클릭
+        3. 아무 동작 없음
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🖥 환경 정보
+      description: 발생한 환경 정보를 알려주세요.
+      placeholder: |
+        - OS: Windows 10 / macOS Ventura
+        - Browser: Chrome 120 / Safari
+        - Device: PC / Mobile
+      validations:
+        required: false
+
+  - type: textarea
+    attributes:
+      label: 📸 스크린샷 또는 로그
+      description: 가능한 경우 에러 메시지, 로그, 스크린샷을 첨부해주세요.
+      placeholder: 첨부는 drag & drop 또는 복사-붙여넣기로 가능합니다.

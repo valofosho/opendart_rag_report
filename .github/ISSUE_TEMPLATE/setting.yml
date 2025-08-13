@@ -1,0 +1,44 @@
+name: "⚙️ 환경 세팅 도움 요청"
+description: "개발 환경 설정 관련 이슈"
+labels: ["setup", "question"]
+body:
+  - type: textarea
+    attributes:
+      label: 🧩 어떤 환경 세팅이 필요한가요?
+      description: 설정하려는 환경 또는 도구에 대해 설명해주세요.
+      placeholder: |
+        예) Mac에서 Docker 기반 개발 환경을 세팅하고 싶어요.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ⚠️ 발생한 문제 또는 에러 메시지
+      description: 환경 설정 중 마주친 문제나 에러를 작성해주세요.
+      placeholder: |
+        - npm install 시 permission denied
+        - .env 파일 설정 시점 헷갈림 등
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 💻 현재 환경 정보
+      description: 사용 중인 OS, Node/Python 등 버전 정보를 적어주세요.
+      placeholder: |
+        - OS: macOS 14.0
+        - Node: 20.x
+        - Python: 3.11
+        - Git: 2.42
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 🙋🏻 시도해본 방법
+      description: 이미 시도해본 방법이나 구글링한 내용이 있다면 공유해주세요.
+      placeholder: |
+        - brew update 시도
+        - StackOverflow에 나온 설정 값 적용
+    validations:
+      required: false
